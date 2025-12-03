@@ -22,9 +22,7 @@ def _is_lfs_pointer(path: str) -> bool:
 
 @st.cache_resource(show_spinner=True)
 def load_model(model_path: str) -> Tuple[nn.Module, int]:
-    # Build base model
     model = convnext_large(weights=None)
-    # Detect common issue: LFS pointer file not downloaded
     if _is_lfs_pointer(model_path):
         raise RuntimeError(
             "Model file appears to be a Git LFS pointer. Run 'git lfs pull' or 'git lfs checkout' to download the actual binary."
