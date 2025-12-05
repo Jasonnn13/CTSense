@@ -274,7 +274,7 @@ st.write(
 st.subheader("How Do You Detect It?")
 st.write(
 	"Chest cancer often begins with mild or unclear symptoms like coughing, chest pain, or fatigue. "
-	"Because these signs can be easily missed, doctors rely on CT scans or X-rays to spot abnormalities."
+	"Because these signs can be easily missed, doctors rely on **CT scans** to spot abnormalities."
 )
 st.write(
 	"With CTSense AI, you can upload your chest scan and receive a fast, AI-powered analysis that helps identify "
